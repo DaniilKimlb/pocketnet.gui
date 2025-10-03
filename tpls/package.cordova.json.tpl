@@ -47,6 +47,7 @@
         "cc.fovea.cordova.openwith": "file:cc.fovea.cordova.openwith",
         "cordova-android": "^14.0.0",
         "cordova-androidx-build": "^1.0.4",
+        "cordova-call": "file:cordova-call",
         "cordova-ios": "^6.3.0",
         "cordova-plugin-actionsheet": "^2.3.3",
         "cordova-plugin-navigationbar-color": "file:cordova-plugin-navigationbar-color",
@@ -80,7 +81,7 @@
         <% if(!store) {%>
             "cordova-plugin-apkupdater": "~4.0.0",
         <% } %>
-        
+
         "cordova-plugin-firebasex": "18.0.7",
         "np": "^5.0.3",
         "sync-cordova-xml": "^0.4.0"
@@ -92,6 +93,7 @@
             "cordova-plugin-screen-orientation": {},
             "cordova-plugin-badge": {},
             "cordova-plugin-statusbar": {},
+            "cordova-call": {},
             "cordova-plugin-x-socialsharing": {
                 "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
                 "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "Allow the application access to the photo gallery to select photos for publication.",
@@ -115,7 +117,7 @@
                 <% if(config.cordova.iosUrlScheme) {%>,"IOS_URL_SCHEME": "<%-config.cordova.iosUrlScheme%>"<% } %>
                 <% if(config.cordova.groupIdentifier) {%>,"IOS_GROUP_IDENTIFIER": "<%-config.cordova.groupIdentifier%>"<% } %>
                 <% if(config.cordova.iosTeamId) {%>,"SHAREEXT_DEVELOPMENT_TEAM": "<%-config.cordova.iosTeamId%>"<% } %>
-                
+
             },
             "cordova-plugin-insomnia": {},
             "cordova-plugin-taptic-engine": {},
@@ -148,11 +150,11 @@
                 "CAMERA_USAGE_DESCRIPTION": "",
                 "PHOTOLIBRARY_USAGE_DESCRIPTION": ""
             },
-        
+
         <% if(!store) {%>
             "cordova-plugin-apkupdater": {},
         <% } %>
-            
+
 
         <% if(!gfree) {%>
 			"cordova-plugin-firebasex": {
@@ -164,8 +166,8 @@
 				"ANDROID_ICON_ACCENT": "#FF00FFFF",
 				"ANDROID_FIREBASE_PERFORMANCE_MONITORING": "false"
 			},
-        <% } else { %> 
-        
+        <% } else { %>
+
             "cordova-plugin-firebasex": {
 				"FIREBASE_ANALYTICS_COLLECTION_ENABLED": "false",
 				"FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "false",
@@ -188,7 +190,7 @@
                 "ANDROID_PREFERENCES_VERSION": "1.2.1"
             }
 
-            
+
         },
         "platforms": [
             "ios",
